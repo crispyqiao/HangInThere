@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HangInThere: Rescue Glowy!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>HangInThere</h1>
+            <div class="game-info">
+                <div class="info-tag">Category: <span id="category-name">Coding</span></div>
+                <div class="info-tag">Mistakes: <span id="mistake-count">0</span>/6</div>
+                <div class="info-tag timer">Time: <span id="timer-display">40</span>s</div>
+            </div>
+        </header>
+
+        <main class="game-area">
+            <div class="illustration-section">
+                <div class="monster-container" id="monster">
+                    <!-- Monster parts will be added/toggled via CSS classes -->
+                    <div class="monster-part ground"></div>
+                    <div class="monster-part base"></div>
+                    <div class="monster-part body-main"></div>
+                    <div class="monster-part eye left"></div>
+                    <div class="monster-part eye right"></div>
+                    <div class="monster-part mouth"></div>
+                    <div class="monster-part horn left"></div>
+                    <div class="monster-part horn right"></div>
+                </div>
+            </div>
+
+            <div class="word-section">
+                <div id="word-display" class="word-display"></div>
+                <div id="hint-display" class="hint-display">Guess a letter to start!</div>
+            </div>
+
+            <div class="keyboard-section" id="keyboard">
+                <!-- Buttons will be generated via JS -->
+            </div>
+        </main>
+
+        <footer>
+            <button id="reset-btn" class="btn">NEW WORD</button>
+        </footer>
+    </div>
+
+    <!-- Overlay for Win/Loss -->
+    <div id="game-overlay" class="overlay hidden">
+        <div class="overlay-content">
+            <h2 id="overlay-title">YOU WIN!</h2>
+            <p id="overlay-message">Glowy is happy!</p>
+            <p class="reveal-word">The word was: <span id="correct-word"></span></p>
+            <div id="fact-section" class="fact-section hidden">
+                <p class="fact-label">Fun Fact:</p>
+                <p id="fact-text"></p>
+            </div>
+            <button id="play-again-btn" class="btn">PLAY AGAIN</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
