@@ -108,6 +108,16 @@ document.addEventListener('DOMContentLoaded', () => {
     let isGameOver = false;
     let timeLeft = 40;
     let timerInterval = null;
+    let wordPool = [];
+
+    // Shuffle Utility
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
 
     // Timer Logic
     function startTimer() {
@@ -149,7 +159,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize Game
     function initGame() {
-        const randomItem = wordsConfig[Math.floor(Math.random() * wordsConfig.length)];
+        // Refill and shuffle pool if empty
+        if (wordPool.length === 0) {
+            wordPool = shuffleArray([...wordsConfig]);
+        }
+
+        const randomItem = wordPool.pop();
         selectedWord = randomItem.word;
         selectedHint = randomItem.hint;
         selectedFact = randomItem.fact;
