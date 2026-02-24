@@ -4,15 +4,30 @@ document.addEventListener('DOMContentLoaded', () => {
         { word: 'JAVASCRIPT', category: 'Coding', hint: 'The language of the web.', fact: 'JavaScript was created in just 10 days in May 1995 by Brendan Eich.' },
         { word: 'PYTHON', category: 'Coding', hint: 'Named after a snake, great for AI.', fact: 'Python is named after the British comedy group "Monty Python".' },
         { word: 'CSS', category: 'Coding', hint: 'Used for styling web pages.', fact: 'The first CSS specification was published in 1896, but it took until 2011 for CSS3 to be stable.' },
+        { word: 'HTML', category: 'Coding', hint: 'The skeleton of every webpage.', fact: 'HTML was created by Tim Berners-Lee in 1990 while working at CERN.' },
+        { word: 'REACT', category: 'Coding', hint: 'A popular library for UI.', fact: 'React was originally developed by Jordan Walke, a software engineer at Facebook.' },
+        { word: 'GITHUB', category: 'Coding', hint: 'Where developers host their code.', fact: 'GitHub was founded in 2008 and is now the largest host of source code in the world.' },
         { word: 'ELEPHANT', category: 'Animals', hint: 'The largest land animal.', fact: 'Elephants are the only animals that cannot jump!' },
         { word: 'PENGUIN', category: 'Animals', hint: 'A flightless bird that loves ice.', fact: 'Penguins use a special gland to filter salt out of the water they drink.' },
         { word: 'GIRAFFE', category: 'Animals', hint: 'Has a very long neck.', fact: 'A giraffe\'s heart is 2 feet long and weighs about 25 pounds.' },
+        { word: 'OCTOPUS', category: 'Animals', hint: 'Has eight arms and three hearts.', fact: 'Octopuses have blue blood because it is copper-based rather than iron-based.' },
+        { word: 'PLATYPUS', category: 'Animals', hint: 'An egg-laying mammal with a bill.', fact: 'The platypus is one of the few mammals that produces venom.' },
+        { word: 'CHAMELEON', category: 'Animals', hint: 'Famous for changing color.', fact: 'Chameleons don\'t change color to blend in; they do it to regulate temperature or communicate.' },
         { word: 'MARS', category: 'Space', hint: 'The Red Planet.', fact: 'Mars is home to the tallest mountain in the solar system, Olympus Mons.' },
         { word: 'GALAXY', category: 'Space', hint: 'A massive system of stars and dark matter.', fact: 'There are estimated to be 100 to 400 billion stars in our Milky Way galaxy.' },
         { word: 'ASTRONAUT', category: 'Space', hint: 'A person who travels in space.', fact: 'In space, astronauts can grow up to 2 inches (5 cm) taller because spine vertebrae expand.' },
+        { word: 'NEBULA', category: 'Space', hint: 'A giant cloud of dust and gas.', fact: 'Nebulae are often "star nurseries," the birthplaces of new stars.' },
+        { word: 'JUPITER', category: 'Space', hint: 'The largest planet in our solar system.', fact: 'Jupiter is twice as massive as all the other planets combined!' },
+        { word: 'COMET', category: 'Space', hint: 'A "dirty snowball" of ice and dust.', fact: 'Comets have tails that can be millions of miles long, always pointing away from the sun.' },
         { word: 'AVOCADO', category: 'Fruits', hint: 'Green fruit often used in toast.', fact: 'Avocados are actually berries with a single large seed.' },
         { word: 'STRAWBERRY', category: 'Fruits', hint: 'Red fruit with seeds on the outside.', fact: 'Strawberries are the only fruit that wear their seeds on the outside.' },
-        { word: 'PINEAPPLE', category: 'Fruits', hint: 'A tropical fruit with a prickly skin.', fact: 'It can take up to two years for a single pineapple plant to produce one fruit.' }
+        { word: 'PINEAPPLE', category: 'Fruits', hint: 'A tropical fruit with a prickly skin.', fact: 'It can take up to two years for a single pineapple plant to produce one fruit.' },
+        { word: 'MANGO', category: 'Fruits', hint: 'Known as the king of fruits.', fact: 'More fresh mangoes are eaten around the world every day than any other fruit!' },
+        { word: 'KIWI', category: 'Fruits', hint: 'Small fuzzy fruit, green inside.', fact: 'Kiwi fruit was originally known as Chinese gooseberry.' },
+        { word: 'VOLCANO', category: 'Nature', hint: 'An opening in Earth\'s crust.', fact: 'The "Ring of Fire" in the Pacific Ocean contains 75% of the world\'s active volcanoes.' },
+        { word: 'RAINBOW', category: 'Nature', hint: 'Colors in the sky after rain.', fact: 'No two people see the exact same rainbow because every eye sees light from different droplets.' },
+        { word: 'WATERFALL', category: 'Nature', hint: 'River water falling from a height.', fact: 'The tallest waterfall in the world is Angel Falls in Venezuela, dropping 3,212 feet.' },
+        { word: 'GLACIER', category: 'Nature', hint: 'A slow-moving mass of ice.', fact: 'Glaciers store about 69% of the world\'s fresh water.' }
     ];
 
     // Sound Manager
